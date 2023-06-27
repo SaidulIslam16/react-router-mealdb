@@ -1,12 +1,10 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import './Home.css'
 
 const Home = () => {
-    let meals = useLoaderData();
-    meals = meals.meals
     return (
         <div>
-            <h1>Welcome to our Restaurant</h1>
+            <h1>Welcome to Home</h1>
         </div>
     );
 };

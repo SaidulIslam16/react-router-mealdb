@@ -8,7 +8,7 @@ const Header = () => {
             <NavLink to='/home'>Home</NavLink>
             <NavLink to='/about'>About</NavLink>
             <NavLink to='/meals'>Meals</NavLink>
-            <p>This is fixed header</p>
+
         </div>
     );
 };
