@@ -9,7 +9,12 @@ function App() {
   const restaurant = createBrowserRouter([
     {
       path: '/', element: <Restaurant></Restaurant>, children: [
-        { path: '/home', element: <Home></Home> },
+        { path: '/', element: <Home></Home> },
+        {
+          path: '/home', element: <Home></Home>, loader: async () => {
+            return fetch('https://www.themealdb.com/api/json/v1/1/search.php?s=')
+          }
+        },
         { path: '/about', element: <div>This is about</div> },
         { path: '/meals', element: <Meals></Meals> }
       ]
